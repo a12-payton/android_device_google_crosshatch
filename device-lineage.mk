@@ -106,6 +106,10 @@ PRODUCT_PACKAGES += \
     nos_app_keymaster:64 \
     nos_app_weaver:64
 
+# NowPlayingOverlay
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat
