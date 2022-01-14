@@ -47,7 +47,7 @@ lib64/libsecureui_svcsock_system.so
 
 # AiAi
 product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
-product/priv-app/DevicePersonalizationPrebuiltPixel3/DevicePersonalizationPrebuiltPixel3.apk;PRESIGNED
+product/priv-app/DevicePersonalizationPrebuiltPixel3/DevicePersonalizationPrebuiltPixel3.apk;PRESIGNED|992d61469358a62461f0af0dd8db88b36183cdaa
 
 # Audio
 product/etc/ambient/matcher_tah.leveldb
