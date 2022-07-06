@@ -35,6 +35,9 @@ cc_binary {
         "libcutils",
         "libbinder_ndk",
     ],
+    static_libs: [
+        "libpixelusb-aidl",
+    ],
     proprietary: true,
     export_shared_lib_headers: [
         "android.frameworks.stats-V1-ndk",
