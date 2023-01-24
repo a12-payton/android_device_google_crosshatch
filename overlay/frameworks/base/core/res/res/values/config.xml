@@ -394,6 +394,9 @@
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">true</bool>
 
+    <!-- Ignore CNE from privacy (location) indicators -->
+    <string name="config_systemAudioIntelligence" translatable="false">com.qualcomm.qti.cne</string>
+
     <!-- Whether to cancel fingerprint operation if not idle -->
     <bool name="config_fpCancelIfNotIdle">false</bool>
 
