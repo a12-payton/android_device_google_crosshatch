@@ -346,12 +346,17 @@ Status UsbGadget::tearDownGadget() {
     return Status::SUCCESS;
 }
 
-ScopedAStatus UsbGadget::reset() {
+ScopedAStatus UsbGadget::reset(const shared_ptr<IUsbGadgetCallback> &callback,
+        int64_t in_transactionId) {
     if (!WriteStringToFile("none", PULLUP_PATH)) {
         ALOGI("Gadget cannot be pulled down");
+        if (callback)
+            callback->resetCb(Status::ERROR, in_transactionId);
         return ScopedAStatus::fromServiceSpecificErrorWithMessage(
                 -1, "Gadget cannot be pulled down");
     }
+    if (callback)
+        callback->resetCb(Status::SUCCESS, in_transactionId);
 
     return ScopedAStatus::ok();
 }
