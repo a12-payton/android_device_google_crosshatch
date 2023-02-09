@@ -17,7 +17,10 @@
 <resources>
     <string-array name="configs_device">
 
-<!-- Live Caption (Pixel 2017 + OEM) -->
+        <!-- Globally enable the new photo picker -->
+        <item>storage_native_boot/take_over_get_content=true</item>
+
+        <!-- Live Caption (Pixel 2017 + OEM) -->
         <item>device_personalization_services/Captions__available_for_download=en-US;en-GB;en-CA;en-IE;en-AU;en-SG;fr-FR;fr-CA;it-IT;de-DE;ja-JP;es-ES;es-US</item>
         <!-- <item>device_personalization_services/Captions__enable=false</item> -->
         <item>device_personalization_services/Captions__enable_augmented_modality=true</item>
@@ -71,7 +74,7 @@
         <item>device_personalization_services/Translate__translator_expiration_enabled=true</item>
 
         <!-- Now Playing (Pixel 2017) -->
-        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=220:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20220717-030030/manifest.json</item>
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=240:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20230115-030032/manifest.json</item>
         <item>device_personalization_services/NowPlaying__ambient_music_on_demand_enabled=true</item>
         <item>device_personalization_services/NowPlaying__ambient_music_on_demand_music_confidence=0.48</item>
         <item>device_personalization_services/NowPlaying__cloud_api_allowed=true</item>
