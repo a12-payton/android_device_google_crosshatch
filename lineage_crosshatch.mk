@@ -18,15 +18,18 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3 XL
 PRODUCT_NAME := lineage_crosshatch
 
-# Crdroid
+# Ricedroid
+RICE_MAINTAINER := "Khaikate"
+SUSHI_BOOTANIMATION := 1440
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
-TARGET_BOOT_ANIMATION_RES := 1440
+WITH_GMS := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Gapps
-WITH_GMS := true
-$(call inherit-product, vendor/gapps/config.mk)
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2960
+TARGET_SCREEN_WIDTH := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=crosshatch \

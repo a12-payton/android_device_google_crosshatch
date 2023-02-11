@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
 # Setup wizard overlay packages for ActiveEdge
 PRODUCT_PACKAGES += \
     PixelSetupWizardOverlayActiveEdge \
+	
+# GoogleCamera
+PRODUCT_PACKAGES += GoogleCamera
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.insmod.blueline.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
