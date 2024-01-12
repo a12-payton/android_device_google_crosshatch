@@ -22,7 +22,7 @@ TARGET_BUILD_GRAPHENEOS_CAMERA := false
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
+TARGET_SUPPORTS_PIXEL_DEP := true
 # Gapps
 WITH_GMS := true
 $(call inherit-product, vendor/gms/products/gms.mk)
