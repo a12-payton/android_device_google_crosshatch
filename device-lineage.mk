@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
-# NowPlayingOverlay
-PRODUCT_PACKAGES += \
-    NowPlayingOverlay
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
