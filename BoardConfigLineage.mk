@@ -5,6 +5,7 @@
 #
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+WITH_GMS := false
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
