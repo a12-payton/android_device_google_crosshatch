@@ -13,9 +13,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/ramdump/common
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/confirmationui_hal
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_perf_diag
-BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/turbo_adapter
-BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
-
 
 # system_ext
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/crosshatch/sepolicy/system_ext/private
