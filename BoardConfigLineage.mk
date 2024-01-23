@@ -16,7 +16,6 @@ TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
 TARGET_NEEDS_DTBOIMAGE := true
 
 # Manifests
-DEVICE_MANIFEST_FILE += device/google/crosshatch/lineage_manifest.xml
 
 # Partitions
 AB_OTA_PARTITIONS += \
@@ -27,8 +26,7 @@ endif
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/google/crosshatch/sepolicy-lineage/dynamic
-BOARD_SEPOLICY_DIRS += device/google/crosshatch/sepolicy-lineage/vendor
+
 
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
