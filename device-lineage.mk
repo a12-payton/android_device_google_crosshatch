@@ -55,6 +55,9 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Viper
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Build necessary packages for product
 
 # Display
