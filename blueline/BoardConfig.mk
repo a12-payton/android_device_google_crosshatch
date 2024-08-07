@@ -24,4 +24,4 @@ else
   include device/google/crosshatch/BoardConfig-common.mk
 endif
 
-include device/google/crosshatch/blueline/BoardConfigLineage.mk
+include device/google/crosshatch/blueline/BoardConfigCustom.mk

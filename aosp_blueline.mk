@@ -55,8 +55,29 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
   PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 endif
 
+
+# Inherit some PixelBuilds stuff.
+$(call inherit-product, vendor/pb/config/common_full_phone.mk)
+include device/google/crosshatch/blueline/device-custom.mk
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_NAME := aosp_blueline
 PRODUCT_DEVICE := blueline
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on blueline
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Pixel 3
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_PRODUCT=blueline \
+    PRIVATE_BUILD_DESC="blueline-user 12 SP1A.210812.016.C2 8618562 release-keys"
+
+BUILD_FINGERPRINT := google/blueline/blueline:12/SP1A.210812.016.C2/8618562:user/release-keys
+
+$(call inherit-product, vendor/google/blueline/blueline-vendor.mk)
